@@ -1,4 +1,6 @@
 import Head from 'next/head';
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function OAuth() {
 	return (
@@ -7,8 +9,8 @@ export default function OAuth() {
 				<link rel="redirect_uri" href="/api/auth/callback/misskey" />
 			</Head>
 			<div className="h-app">
-				<img src="/logo.png" className="u-logo" />
-				<a href="/" className="u-url p-name">Misskey Portal</a>
+				<Image src="/logo.png" className='u-logo' alt='application logo' width={114} height={114}/>
+				<Link href='/' className='u-url p-name'>Misskey Portal</Link>
 			</div>
 		</>
 	);

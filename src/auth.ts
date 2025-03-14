@@ -6,6 +6,5 @@ export const { handlers, signIn, signOut, auth } = NextAuth({
 	name: "Misskey",
 	type: "oauth",
 	issuer: process.env.MISSKEY_URL,
-	
   }],
 })
